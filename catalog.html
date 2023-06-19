@@ -1,0 +1,555 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Listivo Demo Automotive</title>
+    <script src="https://kit.fontawesome.com/ce3005aab9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <nav class="header section">
+            <div class="header-logo">
+                <a href="index.html"><img src="https://demo5.listivotheme.com/wp-content/uploads/2022/09/logo_dark.png" alt="Logo"></a>
+            </div>  
+            <div class="header-menu">
+                <div class="header-menu-dropdwn">
+                    <a class="header-menu-dropdwn-primary" href="index.html">Home</a>
+                    <div class="header-menu-dropdwn-items">
+                        <a href="index.html">Demo Abstract</a>
+                        <a href="index.html">Demo Earth Tones</a>
+                        <a href="index.html">Demo Modern</a>
+                        <a href="index.html">Demo Classic</a>
+                        <a href="index.html">Demo Transparent Blue</a>
+                        <a href="index.html">Demo Confort</a>
+                        <a href="index.html">Demo Automotive</a>
+                        <a href="index.html">Demo Cars</a>
+                        <a href="index.html">Demo Real Estate</a>
+                        <a href="index.html">Demo Realtor</a>
+                        <a href="index.html">Demo Services</a>
+                    </div>
+                </div>
+                <div class="header-menu-dropdwn">
+                    <a class="header-menu-dropdwn-primary" href="index.html">Search</a>
+                    <div class="header-menu-dropdwn-items">
+                        <a href="index.html">Classic Search</a>
+                        <a href="index.html">Map Search</a>
+                    </div>
+                </div>
+                <div class="header-menu-dropdwn">
+                    <a class="header-menu-dropdwn-primary" href="index.html">Listing</a>
+                    <div class="header-menu-dropdwn-items">
+                        <a href="index.html">Style: Gallery</a>
+                        <a href="index.html">Style: Mosaic</a>
+                        <a href="index.html">Style: Carousel</a>
+                    </div>
+                </div>
+                <div class="header-menu-dropdwn">
+                    <a class="header-menu-dropdwn-primary" href="index.html">Pages</a>
+                    <div class="header-menu-dropdwn-items">
+                        <a href="index.html">Blog</a>
+                        <a href="index.html">About Us</a>
+                        <a href="index.html">Contact Us</a>
+                        <a href="index.html">Log In / Register</a>
+                        <a href="index.html">Our Team</a>
+                        <a href="index.html">User Page</a>
+                        <a href="index.html">FAQ</a>
+                        <a href="index.html">404</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-user">    
+                <a class="header-user-avatar" href="index.html"><i class="fa-regular fa-user fa-xl"></i></a>
+                <div class="header-user-primary">
+                    <a class="header-user-item" href="login.html">Log In</a>
+                    <a class="header-user-item" href="register.html">Register</a>
+                </div>
+                <button class="btn btn-primary">
+                    Add Listing
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="main-wrapper">
+        <div class="sideform">
+            <div class="sideform__selection-buttons selection-filter__wrapper">
+                <button class="for-btn">For rent</button>
+                <button class="for-btn">For sale</button>
+            </div>
+            <form class="sideform__selection-filter">
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="location">Location</label>
+                    <input class="selection-filter__text" type="text" id="location" placeholder="Enter the Location">
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="price-range">Price</label>
+                    <input type="range" name="price-range" id="price-range" min="550" max="740000" value="740000">
+                    <div class="selection-filter__range">
+                        <input class="selection-filter__text" type="number" step="1" name="min-price" value="550">
+                        <i class="fa-solid fa-minus selection-filter__dash"></i>
+                        <input class="selection-filter__text" type="number" step="1" name="max-price" value="740000">
+                    </div>
+                </div>
+                <!-- <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="bedrooms">Bedrooms</label>
+                    <div class="selection-filter__radio-align" id="bedrooms">
+                        <button class="selection-filter__btn">Studio</button>
+                        <button class="selection-filter__btn">1</button>
+                        <button class="selection-filter__btn">2</button>
+                        <button class="selection-filter__btn">3</button>
+                        <button class="selection-filter__btn">4</button>
+                        <button class="selection-filter__btn">5</button>
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="bathrooms">Bathrooms</label>
+                    <div class="selection-filter__radio-align" id="bathrooms">
+                        <button class="selection-filter__btn">1</button>
+                        <button class="selection-filter__btn">2</button>
+                        <button class="selection-filter__btn">3</button>
+                        <button class="selection-filter__btn">4</button>
+                    </div>
+                </div> -->
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="bedrooms">Bedrooms</label>
+                    <div class="selection-filter__radio-align" id="bedrooms">
+                        <input type="radio" id="feature-sudio" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-studio">Studio</label>
+                        <input type="radio" id="feature-1" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-1">1</label>
+                        <input type="radio" id="feature-2" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-2">2</label>
+                        <input type="radio" id="feature-3" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-3">3</label>
+                        <input type="radio" id="feature-4" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-4">4</label>
+                        <input type="radio" id="feature-5" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-5">5</label>
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="bathrooms">Bathrooms</label>
+                    <div class="selection-filter__radio-align" id="bathrooms">
+                        <input type="radio" id="feature-1" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-1">1</label>
+                        <input type="radio" id="feature-2" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-2">2</label>
+                        <input type="radio" id="feature-3" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-3">3</label>
+                        <input type="radio" id="feature-4" class="feature-radio" name="radio-feature">
+                        <label class="selection-filter__btn" for="feature-4">4</label>
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="surface-range">Square metres</label>
+                    <div class="selection-filter__range" id="surface-range">
+                        <input class="selection-filter__text" type="number" step="1" name="min-surface" placeholder="Min">
+                        <i class="fa-solid fa-minus selection-filter__dash"></i>
+                        <input class="selection-filter__text" type="number" step="1" name="max-surface" placeholder="Max">
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="property-type">Property type</label>
+                    <div class="slection-filter__checkbox overflow-auto" id="property-type">
+                        <div class="checkbox">
+                            <input type="checkbox" id="apartment">
+                            <label for="apartment">Apartment</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="commercial">
+                            <label for="commercial">Commercial</label>
+                        </div>
+                        <div>    
+                            <input type="checkbox" id="daily-rental">
+                            <label for="daily-rental">Daily rental</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="house">
+                            <label for="house">House</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="land">
+                            <label for="land">Land</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="new-building">
+                            <label for="new-building">New building</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="office">
+                            <label for="office">Office</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="parking-lot">
+                            <label for="parking-lor">Parking lot</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="room">
+                            <label for="room">Room</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="pets">Pets</label>
+                    <div class="slection-filter__checkbox" id="pets">
+                        <div>
+                            <input type="checkbox" id="cats">
+                            <label for="cats">Cats allowed</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="dogs">
+                            <label for="dogs">Dogs allowed</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="additional">Additional options</label>
+                    <div class="slection-filter__checkbox" id="additional">
+                        <div>
+                            <input type="checkbox" id="featured">
+                            <label for="featured">Featured</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="verified">
+                            <label for="verified">Verified</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-filter__wrapper">
+                    <label class="selection-filter__label" for="amenities">Amenities</label>
+                    <div class="slection-filter__checkbox overflow-auto" id="amenities">
+                        <div>
+                            <input type="checkbox" id="air-conditiong">
+                            <label for="air-conditiong">Air conditiong</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="balcony">
+                            <label for="balcony">Balcony</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="dishwasher">
+                            <label for="dishwasher">Dishwasher</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="garage">
+                            <label for="garage">Garage</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gym">
+                            <label for="gym">Gym</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="laundry">
+                            <label for="laundry">Laundry</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="parking">
+                            <label for="parking">Parking</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="pool">
+                            <label for="pool">Pool</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="security">
+                            <label for="security">Security cameras</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="wifi">
+                            <label for="wifi">WiFi</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons selection-filter__wrapper">
+                    <button class="filter-buttons__submit" type="submit">Filter</button>
+                    <button class="filter-buttons__submit filter-buttons__reset" type="submit">Reset filters</button>
+                </div>
+            </form>
+        </div>
+        <div class="catalog">
+            <div class="gallery-breadcrumbs">
+                <span>Home > Categories > For sale</span>
+            </div>
+            <div class="gallery-header">
+                <h1>For sale</h1>
+                <a class="gallery-header__mapview" href="#">
+                    <i class="fa-regular fa-map"></i>
+                    Map view
+                </a>
+            </div>
+            <div class="sorting">
+                <i class="fa-solid fa-up-down"></i>
+                <span>Sort by:</span>
+                <div class="dropdown-sort">
+                    <select class="dropdown-sort-menu">
+                        <option class="dropdown-sort-item">Date</option>
+                        <option class="dropdown-sort-item">Title</option>
+                        <option class="dropdown-sort-item">Price ↑</option>
+                        <option class="dropdown-sort-item">Price ↓</option>
+                        <option class="dropdown-sort-item">Cars ↑</option>
+                        <option class="dropdown-sort-item">Cars ↓</option>
+                        <option class="dropdown-sort-item">Rating ↑</option>
+                        <option class="dropdown-sort-item">Rating ↓</option>
+                    </select>
+                </div>
+                <div class="sorting-result">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span class="sorting-result-number" data-results="33">results</span>
+                </div>
+            </div>
+            <div class="gallery-rent-wrapper sc-content">
+                <div class="gallery-rent-tile">
+                    <a href="#" class="rent-tile__img">
+                        <span class="badge badge-verified badge-featured badge-new"></span>
+                        <img src="https://finder.madrasthemes.com/real-estate/wp-content/uploads/sites/2/2021/11/10-1.jpg" alt="">
+                    </a>
+                    <div class="rent-tile__content">
+                        <a href="#" class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </a>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://finder.madrasthemes.com/real-estate/wp-content/uploads/sites/2/2021/11/10-1.jpg" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://finder.madrasthemes.com/real-estate/wp-content/uploads/sites/2/2021/11/10-1.jpg" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://finder.madrasthemes.com/real-estate/wp-content/uploads/sites/2/2021/11/10-1.jpg" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://images.unsplash.com/photo-1665413774104-feef087aa21b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfFJfRnluLUd3dGx3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://images.unsplash.com/photo-1665655276959-e2895780994d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://images.unsplash.com/photo-1665655276959-e2895780994d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://images.unsplash.com/photo-1665655276959-e2895780994d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-rent-tile">
+                    <div class="rent-tile__img">
+                        <img src="https://images.unsplash.com/photo-1665655276959-e2895780994d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                    <div class="rent-tile__content">
+                        <div class="rent-tile__content--longdesc">
+                            <p class="paragraph-orange">FOR RENT</p>
+                            <h4 class="title-2">O'Farrell Rooms | 40 sq.m</h4>
+                            <p class="paragraph-style-2 paragraph-lenght">460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA 460 E Forham Rd, The Bronx, Bronx, NY 10458, USA</p>
+                            <h4 class="paragraph-style-2 longdesc-price">$550</h4>
+                        </div>
+                        <div class="rent-tile__content--shortdesc">
+                            <span class="shortdesc-facilities" data-facilities="2"><i class="fa-solid fa-bed"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="1"><i class="fa-solid fa-bath"></i></span>
+                            <span class="shortdesc-facilities" data-facilities="0"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="pagination">
+                <button class="pagination-btn">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrapper sc-content">
+        <div class="footer section">
+            <div class="footer-contact">
+                <img class="header-logo" src="https://demo5.listivotheme.com/wp-content/uploads/2022/09/logo_light.png" alt="Listivo logo">
+                <div class="contact">    
+                    <span class="contact-icon contact-phone"><a href="tel:1233456789">(123) 345-6789</a></span>
+                    <span class="contact-icon contact-location">518-520 5th AveNew York, USA</span>
+                    <span class="contact-icon contact-email"><a href="mailto:support@tangibledesign.net">support@tangibledesign.net</a></span>
+                </div>
+                <h4 class="footer-social-media">Follow our social media</h4>
+                <a href="index.html"><i class="fab fa-facebook-f social-media-icon"></i></a>
+                <a href="index.html"><i class="fab fa-twitter social-media-icon"></i></a>
+                <a href="index.html"><i class="fab fa-linkedin-in social-media-icon"></i></a>
+                <a href="index.html"><i class="fab fa-instagram social-media-icon"></i></a>
+            </div>
+            <div class="selection">
+                <h4 class="selection-title">Useful links</h4>
+                <a href="index.html">Panel</a>
+                <a href="index.html">Our Team</a>
+                <a href="index.html">Map Search</a>
+                <a href="index.html">Login and register</a>
+                <a href="index.html">FAQ</a>
+            </div>
+            <div class="selection">
+                <h4 class="selection-title">Categories</h4>
+                <a href="index.html">Car</a>
+                <a href="index.html">Truck</a>
+                <a href="index.html">Motorcycle</a>
+                <a href="index.html">Bus</a>
+                <a href="index.html">Auto Detailing</a>
+            </div>
+            <div class="selection-listing">
+                <h4>Newest listings</h4>
+                <div class="new-listing">
+                    <a class="new-listing-img" href="index.html">
+                        <img src="https://demo5.listivotheme.com/wp-content/uploads/2022/09/card_1-100x100.jpg" alt="">
+                    </a>
+                    <a href="index.html">
+                        <p class="selection-listing-content">Ford Focus SE</p>
+                    </a>
+                    <p class="selection-listing-content">$45,000</p>
+                </div>
+                <div class="new-listing">
+                    <a class="new-listing-img" href="index.html">
+                        <img src="https://demo5.listivotheme.com/wp-content/uploads/2022/09/card_8-100x100.jpg" alt="">
+                    </a>
+                    <a href="index.html">
+                        <p class="selection-listing-content">Audi GLS 4</p>
+                    </a>
+                    <p class="selection-listing-content">$45,000</p>
+                </div>
+                <div class="new-listing">
+                    <a class="new-listing-img" href="index.html">
+                        <img src="https://demo5.listivotheme.com/wp-content/uploads/2022/09/card_3-100x100.jpg" alt="">
+                    </a>
+                    <a href="index.html">
+                        <p class="selection-listing-content">Porshe R5 (Retro)</p>
+                    </a>
+                    <p class="selection-listing-content">$90,000</p>
+                </div>
+                <div class="new-listing">
+                    <a class="new-listing-img" href="index.html">
+                        <img src="https://demo5.listivotheme.com/wp-content/uploads/2022/09/card_4-100x100.jpg" alt="">
+                    </a>
+                    <a href="index.html">
+                        <p class="selection-listing-content">Jeep 104 GT</p>
+                    </a>
+                    <p class="selection-listing-content">$85,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2022 Listivo - Listing Directory WordPress Theme. All rights reserved.</p>
+    </div>

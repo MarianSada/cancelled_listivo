@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Listivo Demo Automotive</title>
+    <script src="https://kit.fontawesome.com/ce3005aab9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="all-content-wrapper">
+        <div class="admin-aside flex-column">
+            <div class="admin-aside__nav-logo flex-row">
+                <img class="admin-aside__nav-logo--pic" src="https://accomu.netlify.app/img/logo.png" alt="">
+                <h2>Accommo</h2>
+            </div>
+            <div class="admin-aside__nav-menu flex-column">
+                <p class="title-2">PAGES</p>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="mr-2 w-5 h-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.14285 2C8.08928 2 8.85714 2.74618 8.85714 3.66667V9.22222C8.85714 10.1424 8.08928 10.8889 7.14285 10.8889H3.71428C2.7675 10.8889 2 10.1424 2 9.22222V3.66667C2 2.74618 2.7675 2 3.71428 2H7.14285ZM7.14285 13.1111C8.08928 13.1111 8.85714 13.8576 8.85714 14.7778V15.8889C8.85714 16.809 8.08928 17.5556 7.14285 17.5556H3.71428C2.7675 17.5556 2 16.809 2 15.8889V14.7778C2 13.8576 2.7675 13.1111 3.71428 13.1111H7.14285Z" fill="currentColor"></path>
+                        <path d="M16.2857 2C17.2321 2 18 2.74618 18 3.66667V4.77778C18 5.69792 17.2321 6.44444 16.2857 6.44444H12.8571C11.9107 6.44444 11.1429 5.69792 11.1429 4.77778V3.66667C11.1429 2.74618 11.9107 2 12.8571 2H16.2857ZM16.2857 8.66667C17.2321 8.66667 18 9.41319 18 10.3333V15.8889C18 16.809 17.2321 17.5556 16.2857 17.5556H12.8571C11.9107 17.5556 11.1429 16.809 11.1429 15.8889V10.3333C11.1429 9.41319 11.9107 8.66667 12.8571 8.66667H16.2857Z" fill="#B2DDFF"></path>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M512 448C512 483.3 483.3 512 448 512H64C28.65 512 0 483.3 0 448V224C0 188.7 28.65 160 64 160H448C483.3 160 512 188.7 512 224V448zM440 80C453.3 80 464 90.75 464 104C464 117.3 453.3 128 440 128H72C58.75 128 48 117.3 48 104C48 90.75 58.75 80 72 80H440zM392 0C405.3 0 416 10.75 416 24C416 37.25 405.3 48 392 48H120C106.7 48 96 37.25 96 24C96 10.75 106.7 0 120 0H392z" fill="currentColor"></path>
+                    </svg>
+                    <span>Purchase History</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M72 48C85.25 48 96 58.75 96 72V120C96 133.3 85.25 144 72 144V232H128C128 218.7 138.7 208 152 208H200C213.3 208 224 218.7 224 232V280C224 293.3 213.3 304 200 304H152C138.7 304 128 293.3 128 280H72V384C72 388.4 75.58 392 80 392H128C128 378.7 138.7 368 152 368H200C213.3 368 224 378.7 224 392V440C224 453.3 213.3 464 200 464H152C138.7 464 128 453.3 128 440H80C49.07 440 24 414.9 24 384V144C10.75 144 0 133.3 0 120V72C0 58.75 10.75 48 24 48H72zM160 96C160 78.33 174.3 64 192 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96zM288 256C288 238.3 302.3 224 320 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H320C302.3 288 288 273.7 288 256zM288 416C288 398.3 302.3 384 320 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H320C302.3 448 288 433.7 288 416z" fill="currentColor"></path>
+                    </svg>
+                    <span>Blog List</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M72 48C85.25 48 96 58.75 96 72V120C96 133.3 85.25 144 72 144V232H128C128 218.7 138.7 208 152 208H200C213.3 208 224 218.7 224 232V280C224 293.3 213.3 304 200 304H152C138.7 304 128 293.3 128 280H72V384C72 388.4 75.58 392 80 392H128C128 378.7 138.7 368 152 368H200C213.3 368 224 378.7 224 392V440C224 453.3 213.3 464 200 464H152C138.7 464 128 453.3 128 440H80C49.07 440 24 414.9 24 384V144C10.75 144 0 133.3 0 120V72C0 58.75 10.75 48 24 48H72zM160 96C160 78.33 174.3 64 192 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96zM288 256C288 238.3 302.3 224 320 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H320C302.3 288 288 273.7 288 256zM288 416C288 398.3 302.3 384 320 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H320C302.3 448 288 433.7 288 416z" fill="currentColor"></path>
+                    </svg>
+                    <span>Edit Package</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="mr-2 w-5 h-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.14285 2C8.08928 2 8.85714 2.74618 8.85714 3.66667V9.22222C8.85714 10.1424 8.08928 10.8889 7.14285 10.8889H3.71428C2.7675 10.8889 2 10.1424 2 9.22222V3.66667C2 2.74618 2.7675 2 3.71428 2H7.14285ZM7.14285 13.1111C8.08928 13.1111 8.85714 13.8576 8.85714 14.7778V15.8889C8.85714 16.809 8.08928 17.5556 7.14285 17.5556H3.71428C2.7675 17.5556 2 16.809 2 15.8889V14.7778C2 13.8576 2.7675 13.1111 3.71428 13.1111H7.14285Z" fill="currentColor"></path>
+                        <path d="M16.2857 2C17.2321 2 18 2.74618 18 3.66667V4.77778C18 5.69792 17.2321 6.44444 16.2857 6.44444H12.8571C11.9107 6.44444 11.1429 5.69792 11.1429 4.77778V3.66667C11.1429 2.74618 11.9107 2 12.8571 2H16.2857ZM16.2857 8.66667C17.2321 8.66667 18 9.41319 18 10.3333V15.8889C18 16.809 17.2321 17.5556 16.2857 17.5556H12.8571C11.9107 17.5556 11.1429 16.809 11.1429 15.8889V10.3333C11.1429 9.41319 11.9107 8.66667 12.8571 8.66667H16.2857Z" fill="#B2DDFF"></path>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M512 448C512 483.3 483.3 512 448 512H64C28.65 512 0 483.3 0 448V224C0 188.7 28.65 160 64 160H448C483.3 160 512 188.7 512 224V448zM440 80C453.3 80 464 90.75 464 104C464 117.3 453.3 128 440 128H72C58.75 128 48 117.3 48 104C48 90.75 58.75 80 72 80H440zM392 0C405.3 0 416 10.75 416 24C416 37.25 405.3 48 392 48H120C106.7 48 96 37.25 96 24C96 10.75 106.7 0 120 0H392z" fill="currentColor"></path>
+                    </svg>
+                    <span>Purchase History</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M72 48C85.25 48 96 58.75 96 72V120C96 133.3 85.25 144 72 144V232H128C128 218.7 138.7 208 152 208H200C213.3 208 224 218.7 224 232V280C224 293.3 213.3 304 200 304H152C138.7 304 128 293.3 128 280H72V384C72 388.4 75.58 392 80 392H128C128 378.7 138.7 368 152 368H200C213.3 368 224 378.7 224 392V440C224 453.3 213.3 464 200 464H152C138.7 464 128 453.3 128 440H80C49.07 440 24 414.9 24 384V144C10.75 144 0 133.3 0 120V72C0 58.75 10.75 48 24 48H72zM160 96C160 78.33 174.3 64 192 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96zM288 256C288 238.3 302.3 224 320 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H320C302.3 288 288 273.7 288 256zM288 416C288 398.3 302.3 384 320 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H320C302.3 448 288 433.7 288 416z" fill="currentColor"></path>
+                    </svg>
+                    <span>Blog List</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M72 48C85.25 48 96 58.75 96 72V120C96 133.3 85.25 144 72 144V232H128C128 218.7 138.7 208 152 208H200C213.3 208 224 218.7 224 232V280C224 293.3 213.3 304 200 304H152C138.7 304 128 293.3 128 280H72V384C72 388.4 75.58 392 80 392H128C128 378.7 138.7 368 152 368H200C213.3 368 224 378.7 224 392V440C224 453.3 213.3 464 200 464H152C138.7 464 128 453.3 128 440H80C49.07 440 24 414.9 24 384V144C10.75 144 0 133.3 0 120V72C0 58.75 10.75 48 24 48H72zM160 96C160 78.33 174.3 64 192 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96zM288 256C288 238.3 302.3 224 320 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H320C302.3 288 288 273.7 288 256zM288 416C288 398.3 302.3 384 320 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H320C302.3 448 288 433.7 288 416z" fill="currentColor"></path>
+                    </svg>
+                    <span>Edit Package</span>
+                </a>
+                <a href="alllistings.html" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M152.1 38.16C161.9 47.03 162.7 62.2 153.8 72.06L81.84 152.1C77.43 156.9 71.21 159.8 64.63 159.1C58.05 160.2 51.69 157.6 47.03 152.1L7.029 112.1C-2.343 103.6-2.343 88.4 7.029 79.03C16.4 69.66 31.6 69.66 40.97 79.03L63.08 101.1L118.2 39.94C127 30.09 142.2 29.29 152.1 38.16V38.16zM152.1 198.2C161.9 207 162.7 222.2 153.8 232.1L81.84 312.1C77.43 316.9 71.21 319.8 64.63 319.1C58.05 320.2 51.69 317.6 47.03 312.1L7.029 272.1C-2.343 263.6-2.343 248.4 7.029 239C16.4 229.7 31.6 229.7 40.97 239L63.08 261.1L118.2 199.9C127 190.1 142.2 189.3 152.1 198.2V198.2zM224 96C224 78.33 238.3 64 256 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H256C238.3 128 224 113.7 224 96V96zM224 256C224 238.3 238.3 224 256 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H256C238.3 288 224 273.7 224 256zM160 416C160 398.3 174.3 384 192 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416zM0 416C0 389.5 21.49 368 48 368C74.51 368 96 389.5 96 416C96 442.5 74.51 464 48 464C21.49 464 0 442.5 0 416z" fill="currentColor"></path>
+                    </svg>
+                    <span>All Listing</span>
+                </a>
+                <a href="addlisting.html" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM96 392c-13.25 0-24-10.75-24-24S82.75 344 96 344s24 10.75 24 24S109.3 392 96 392zM112 288C107.9 288 103.8 286.4 100.7 283.3l-32-32c-6.25-6.25-6.25-16.38 0-22.62s16.38-6.25 22.62 0L112 249.4l52.69-52.69c6.25-6.25 16.38-6.25 22.62 0s6.25 16.38 0 22.62l-64 64C120.2 286.4 116.1 288 112 288zM304 384h-128C167.2 384 160 376.8 160 368C160 359.2 167.2 352 176 352h128c8.801 0 16 7.199 16 16C320 376.8 312.8 384 304 384zM304 288h-96C199.2 288 192 280.8 192 272C192 263.2 199.2 256 208 256h96C312.8 256 320 263.2 320 272C320 280.8 312.8 288 304 288z" fill="currentColor"></path>
+                    </svg>
+                    <span>Add Listing</span>
+                </a>
+            </div>
+            <div class="admin-aside__nav-menu flex-column">
+                <p class="title-2">Listing</p>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.26598 2.16147C9.73163 1.94618 10.2692 1.94618 10.7348 2.16147L17.5664 5.31891C17.832 5.44079 18.0008 5.70642 18.0008 5.97206C18.0008 6.29083 17.832 6.55647 17.5664 6.68147L10.7348 9.83788C10.2692 10.0535 9.73163 10.0535 9.26598 9.83788L2.43533 6.68147C2.16995 6.55647 2 6.29083 2 5.97206C2 5.70642 2.16991 5.44079 2.43533 5.31891L9.26598 2.16147ZM17.5664 13.3193C17.832 13.4412 18.0008 13.7068 18.0008 13.9725C18.0008 14.2912 17.832 14.5569 17.5664 14.6819L10.7348 17.8383C10.2692 18.0539 9.73163 18.0539 9.26598 17.8383L2.43533 14.6819C2.16995 14.5569 2 14.2912 2 13.9725C2 13.7068 2.16991 13.4412 2.43533 13.3193L4.09792 12.5505L8.84721 14.7444C9.5785 15.085 10.4223 15.085 11.1536 14.7444L15.9038 12.5505L17.5664 13.3193Z" fill="currentColor"></path>
+                        <path d="M11.1536 10.7442L15.9038 8.55032L17.5664 9.31911C17.832 9.44099 18.0008 9.70663 18.0008 9.97227C18.0008 10.291 17.832 10.5567 17.5664 10.6817L10.7348 13.8381C10.2692 14.0537 9.73163 14.0537 9.26598 13.8381L2.43533 10.6817C2.16995 10.5567 2 10.291 2 9.97227C2 9.70663 2.16991 9.44099 2.43533 9.31911L4.09792 8.55032L8.84721 10.7442C9.5785 11.0848 10.4223 11.0848 11.1536 10.7442Z" fill="#D0D5DD"></path>
+                    </svg>
+                    <span>My Listing</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.26598 2.16147C9.73163 1.94618 10.2692 1.94618 10.7348 2.16147L17.5664 5.31891C17.832 5.44079 18.0008 5.70642 18.0008 5.97206C18.0008 6.29083 17.832 6.55647 17.5664 6.68147L10.7348 9.83788C10.2692 10.0535 9.73163 10.0535 9.26598 9.83788L2.43533 6.68147C2.16995 6.55647 2 6.29083 2 5.97206C2 5.70642 2.16991 5.44079 2.43533 5.31891L9.26598 2.16147ZM17.5664 13.3193C17.832 13.4412 18.0008 13.7068 18.0008 13.9725C18.0008 14.2912 17.832 14.5569 17.5664 14.6819L10.7348 17.8383C10.2692 18.0539 9.73163 18.0539 9.26598 17.8383L2.43533 14.6819C2.16995 14.5569 2 14.2912 2 13.9725C2 13.7068 2.16991 13.4412 2.43533 13.3193L4.09792 12.5505L8.84721 14.7444C9.5785 15.085 10.4223 15.085 11.1536 14.7444L15.9038 12.5505L17.5664 13.3193Z" fill="currentColor"></path>
+                        <path d="M11.1536 10.7442L15.9038 8.55032L17.5664 9.31911C17.832 9.44099 18.0008 9.70663 18.0008 9.97227C18.0008 10.291 17.832 10.5567 17.5664 10.6817L10.7348 13.8381C10.2692 14.0537 9.73163 14.0537 9.26598 13.8381L2.43533 10.6817C2.16995 10.5567 2 10.291 2 9.97227C2 9.70663 2.16991 9.44099 2.43533 9.31911L4.09792 8.55032L8.84721 10.7442C9.5785 11.0848 10.4223 11.0848 11.1536 10.7442Z" fill="#D0D5DD"></path>
+                    </svg>
+                    <span>My Listing Grid View</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 13.5C19 15.9844 16.9844 18 14.5 18C12.0156 18 10 15.9844 10 13.5C10 11.0156 12.0156 8.99997 14.5 8.99997C16.9844 8.99997 19 11.0156 19 13.5ZM14 11.4719V12.9719H12.5C12.225 12.9719 12 13.225 12 13.4719C12 13.775 12.225 13.9719 12.5 13.9719H14V15.4719C14 15.775 14.225 15.9719 14.5 15.9719C14.775 15.9719 15 15.775 15 15.4719V13.9719H16.5C16.775 13.9719 17 13.775 17 13.4719C17 13.225 16.775 12.9719 16.5 12.9719H15V11.4719C15 11.225 14.775 10.9719 14.5 10.9719C14.225 10.9719 14 11.225 14 11.4719Z" fill="#D0D5DD"></path>
+                        <path d="M16.8438 8.52184C16.1344 8.18746 15.3375 7.99996 14.5 7.99996C11.4625 7.99996 9.00001 10.4625 9.00001 13.5C9.00001 14.6156 9.33126 15.6531 9.90313 16.5188L9.73126 16.6969C9.32501 17.1 8.67188 17.1 8.29688 16.6969L2.24095 10.4531C0.493138 8.64059 0.586575 5.64369 2.55314 3.95868C4.23751 2.49149 6.82814 2.77243 8.39063 4.36462L9.01251 5.01994L9.60626 4.36462C11.1688 2.77243 13.7281 2.49149 15.475 3.95868C16.8156 5.12807 17.2719 6.92495 16.8438 8.52184Z" fill="currentColor"></path>
+                    </svg>
+                    <span>Bookmarks</span>
+                </a>
+                <a href="#" class="admin-aside__nav-menu--item flex-row">
+                    <svg class="svg-dim" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99042 15.7432L6.10882 17.8835C5.78183 18.0616 5.38519 18.0335 5.08544 17.8117C4.78569 17.5898 4.63431 17.2086 4.69789 16.8337L5.44272 12.253L2.28718 9.05967C2.02649 8.79096 1.93384 8.39726 2.04829 8.03481C2.16244 7.67548 2.46431 7.41301 2.82734 7.3599L7.1746 6.69748L9.12448 2.56271C9.28495 2.21979 9.62103 2.00163 9.96317 2L9.99042 15.7432ZM14.3867 17.9991C14.3534 18.0023 14.3201 18.0023 14.2868 17.9991H14.3867Z" fill="currentColor"></path>
+                        <path d="M5.70004 17.9991C5.66976 18.0023 5.63645 18.0023 5.60315 17.9991H5.70004ZM9.99037 15.7432V2.00001L9.9934 2C10.3658 2 10.7049 2.21851 10.8654 2.56271L12.8122 6.69748L17.1631 7.3599C17.5234 7.41301 17.8262 7.67548 17.9413 8.03481C18.0563 8.39726 17.9625 8.79096 17.7021 9.05967L14.5471 12.253L15.292 16.8337C15.3525 17.2086 15.2011 17.5898 14.9014 17.8117C14.6016 18.0335 14.205 18.0616 13.881 17.8835L9.9934 15.7432H9.99037Z" fill="#D0D5DD"></path>
+                    </svg>
+                    <span>Reviews</span>
+                </a>
+            </div>
+            <div class="admin-aside__nav-menu flex-column">
+                <p class="title-2">Listing</p>
+                <a class="admin-aside__nav-menu--item flex-row" href="profile.html">
+                    <svg class="svg-dim" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8296 11.6H8.57036C5.49461 11.6 3 13.988 3 16.9331C3 17.5221 3.49886 18 4.11407 18H16.2866C16.9018 18.0009 17.4 17.5239 17.4 16.9331C17.4 13.988 14.9057 11.6 11.8296 11.6Z" fill="currentColor"></path>
+                        <path d="M14.2 6C14.2 8.20906 12.4094 10 10.2 10C7.99064 10 6.20001 8.20937 6.20001 6C6.20001 3.79063 7.99095 2 10.2 2C12.4094 2 14.2 3.79094 14.2 6Z" fill="#D0D5DD"></path>
+                    </svg>
+                    <span>My Profile</span>
+                </a>
+                <button class="admin-aside__nav-menu--item flex-row" id="logoutBtn">
+                    <svg class="svg-dim" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.7545 10.6395L13.8409 15.7537C13.6031 16.0011 13.2544 16.0687 12.9543 15.9265C12.6542 15.7837 12.4596 15.4576 12.4596 15.0973L12.4564 12.4236L8.09183 12.4236C7.48863 12.4236 7 11.8847 7 11.2202V8.81353C7 8.14906 7.48897 7.61018 8.09183 7.61018L12.4564 7.61022L12.4596 4.90268C12.4596 4.5425 12.6542 4.21639 12.9543 4.07349C13.2545 3.93131 13.6032 3.99889 13.8409 4.24625L18.7545 9.36049C19.0818 9.66554 19.0818 10.2973 18.7545 10.6395Z" fill="currentColor"></path>
+                        <path d="M4.5 18H6.83333C7.47865 18 8 17.4893 8 16.8571C8 16.225 7.47865 15.7143 6.83333 15.7143H4.5C3.85578 15.7143 3.33333 15.2025 3.33333 14.5714V5.42857C3.33333 4.7975 3.85578 4.28571 4.5 4.28571H6.83333C7.47865 4.28571 8 3.77393 8 3.14286C8 2.51179 7.47865 2 6.83333 2H4.5C2.56698 2 1 3.535 1 5.42857V14.5714C1 16.4643 2.56698 18 4.5 18Z" fill="#D0D5DD"></path>
+                    </svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+            <div class="admin-aside__nav-menu admin-aside__nav-menu--profile flex-row">
+                <img class="admin-aside__nav-menu--profile-pic" src="https://accomu.netlify.app/img/faces/2.jpg" alt="">
+                <div class="admin-aside__nav-menu--profile-name">
+                    <h4 class="margin-0">Gage Paquette</h4>
+                    <p class="margin-0">gagep@accommo.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="not-admin-wrapper">
+            <div class="header-wrapper profile">
+                <nav class="header">
+                    <div class="header-menu">
+                        <div class="header-menu-dropdwn">
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="header-menu-dropdwn">
+                            <a href="index.html">Listing</a>
+                        </div>
+                        <div class="header-menu-dropdwn">
+                            <a class="header-menu-dropdwn-primary" href="index.html">Pages</a>
+                            <!-- <div class="header-menu-dropdwn-items">
+                                <a href="index.html">Blog</a>
+                                <a href="index.html">About Us</a>
+                                <a href="index.html">Contact Us</a>
+                                <a href="index.html">Log In / Register</a>
+                                <a href="index.html">Our Team</a>
+                                <a href="index.html">User Page</a>
+                                <a href="index.html">FAQ</a>
+                                <a href="index.html">404</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="header-user">    
+                        <a class="header-user-avatar" href="#"><img class="header-use-profile-pic" src="https://accomu.netlify.app/img/faces/10.jpg" alt=""></a>
+                        <div class="header-user-primary">
+                            <button class="header-user-item header-user-account-btn" href="login.html">My Account</button>
+                        </div>
+                        <button class="btn-listing-profile">
+                            <i class="fa-solid fa-plus"></i>
+                            Add Listing
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div class="profile-wrapper section">
+                <div class="breadcrumbs">
+                    <span>Dashboard > Add listing</span>
+                </div>
+                <div class="addlisting">
+                    <form class="profile__form">
+                        <div class="profile__form-wrapper">
+                            <h3 class="title-2 span-2-col">Basic Information</h3>
+                            <div class="profile__form--input span-2-col">
+                                <label for="listing_title">Listing Title</label>
+                                <input class="profile__form--input-box" type="text" name="listing_title" id="listing_title" placeholder="Type a title">
+                                <div class="validation__toggle">
+                                    <i class="fas fa-check-circle validation__toggle-icons"></i>
+                                    <i class="fas fa-exclamation-circle validation__toggle-icons"></i>
+                                    <small class="validation__toggle--message">Error message</small>
+                                </div>
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_category">Categories</label>
+                                <input class="profile__form--input-box" type="text" name="listing_category" id="listing_category" placeholder="Select a category">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_keyword">Listing Keyword/Tag (No more than 5) *</label>
+                                <input class="profile__form--input-box" type="text" name="listing_keyword" id="listing_keyword" placeholder="e.g. Featured, Popular, Instant Booking">
+                            </div>
+                        </div>
+                        <div class="profile__form-wrapper">
+                            <h3 class="title-2 span-2-col">Locations</h3>
+                            <div class="profile__form--input">
+                                <label for="listing_street">Road or Street</label>
+                                <input class="profile__form--input-box" type="text" name="listing_street" id="listing_street" placeholder="e.g. 12 San Pedro Street">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_city">City or State</label>
+                                <input class="profile__form--input-box" type="text" name="listing_city" id="listing_city" placeholder="Select a City or State"></input>
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_address">Address</label>
+                                <input class="profile__form--input-box" type="text" name="listing_address" id="listing_address" placeholder="Address">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_zip">Zip Code</label>
+                                <input class="profile__form--input-box" type="text" name="listing_zip" Zid="listing_zip" Zplaceholder="e.g. ACV1258">
+                            </div>
+                        </div>
+                        <div class="profile__form-wrapper">
+                            <h3 class="title-2 span-2-col">Details</h3>
+                            <div class="profile__form--input span-2-col">
+                                <label for="listing_description">Description</label>
+                                <textarea class="profile__form--input-box input-box-tall" type="text" name="listing_description" Did="listing_description" Dplaceholder="Write your listing details here..."></textarea>
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_phone">Phone</label>
+                                <input class="profile__form--input-box" type="text" name="listing_phone" id="listing_phone" placeholder="e.g. +1234565464">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_email">Email</label>
+                                <input class="profile__form--input-box" type="text" name="listing_email" id="listing_email" placeholder="Email">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_website">Website</label>
+                                <input class="profile__form--input-box" type="text" name="listing_website" id="listing_website" placeholder="website">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_facebook">Facebook</label>
+                                <input class="profile__form--input-box" type="text" name="listing_facebook" Fid="listing_facebook" Fplaceholder="e.g. www.facebook/etc.com">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_linkedin">Linkedin</label>
+                                <input class="profile__form--input-box" type="text" name="listing_linkedin" id="listing_linkedin" placeholder="e.g. www.linkedin/etc.com">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_youtube">Youtube</label>
+                                <input class="profile__form--input-box" type="text" name="listing_youtube" Yid="listing_youtube" Yplaceholder="e.g. wwww.youtube/etc.com">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_twitter">Twitter</label>
+                                <input class="profile__form--input-box" type="text" name="listing_twitter" Tid="listing_twitter" Tplaceholder="e.g. www.twitter/etc.com">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="listing_dribble">Dribble</label>
+                                <input class="profile__form--input-box" type="text" name="listing_dribble" Did="listing_dribble" Dplaceholder="e.g. www.drible/etc.com">
+                            </div>
+                        </div>
+                        <!-- <div class="profile__form-wrapper">
+                            <h3 class="title-2 span-2-col">Pricing</h3>
+                            <div class="profile__form--input">
+                                <label for="profile-address">Previous Price (USD)</label>
+                                <input class="profile__form--input-box" type="text" name="profile-address" id="profile-address" placeholder="e.g. $123.23">
+                            </div>
+                            <div class="profile__form--input">
+                                <label for="profile-bio">Price (USD)</label>
+                                <input class="profile__form--input-box" type="text" name="profile-bio" id="profile-bio" placeholder="e.g. $111.40"></input>
+                            </div>
+                        </div>
+                        <div class="profile__tags profile__form-wrapper">
+                            <div class="profile__tags--title">
+                                <h3 class="title-2">Tags/Keyword</h3>
+                                <button class="toggle-switch"></button>
+                            </div>
+                            <div class="profile__tags--items">
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Best rental area</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Top rated nearby</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Nearby Restaurants</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Buy apartment</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Top Restaurants</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Delicious food</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Parking slot free</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Free internet</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Amazing place</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Resonable price range</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Secured apartment</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Top events</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__form-wrapper">
+                            <h3 class="title-2 span-2-col">Media Attachment</h3>
+                            <div class="profile__form--input">
+                                <label for="profile-name">Upload Video Link</label>
+                                <input class="profile__form--input-box" type="text" name="profile-name" id="profile-name" placeholder="e.g. www.youtube.com">
+                            </div>
+                            <div class="profile__form--input span-2-col">
+                                <label for="profile-title">Photos or Images</label>
+                                <div class="sper-sa-mearga fake-upload-button" name="profile-title" id="profile-title">
+                                    <i class="fa-solid fa-cloud-arrow-up fake-text"></i>
+                                    <h3 class="fake-title">Drag and Drop Images</h3>
+                                    <p class="fake-text">OR</p>
+                                    <div class="fake-browse-button">Browse Images</div>
+                                    <input class="input-display-none" type="file" name="profile-title" id="profile-title" placeholder="Select a category">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__form-wrapper">
+                            <h3 class="title-2 span-2-col">Overview</h3>
+                            <div class="profile__form--input layout-3-cols">
+                                <label for="profile-name">Bathroom</label>
+                                <input class="profile__form--input-box" type="text" name="profile-name" id="profile-name" placeholder="How many bathrooms?">
+                            </div>
+                                <div class="profile__form--input layout-3-cols">
+                                <label for="profile-title">Bedroom</label>
+                                <input class="profile__form--input-box" type="text" name="profile-title" id="profile-title" placeholder="How many bedrooms?">
+                            </div>
+                            <div class="profile__form--input layout-3-cols">
+                                <label for="profile-email">Garage or Parking Slots</label>
+                                <input class="profile__form--input-box" type="text" name="profile-email" id="profile-email" placeholder="How many slots?">
+                            </div>
+                            <div class="profile__form--input layout-3-cols">
+                                <label for="profile-name">Living Area</label>
+                                <input class="profile__form--input-box" type="text" name="profile-name" id="profile-name" placeholder="How many slots?">
+                            </div>
+                            <div class="profile__form--input layout-3-cols">
+                                <label for="profile-title">Publish Date</label>
+                                <input class="profile__form--input-box" type="date" name="profile-title" id="profile-title" placeholder="Select a category">
+                            </div>
+                            <div class="profile__form--input layout-3-cols">
+                                <label for="profile-email">Year in Build</label>
+                                <input class="profile__form--input-box" type="text" name="profile-email" id="profile-email" placeholder="2020">
+                            </div>
+                        </div>
+                        <div class="profile__tags profile__form-wrapper">
+                            <div class="profile__tags--title">
+                                <h3 class="title-2">Features</h3>
+                                <button class="toggle-switch"></button>
+                            </div>
+                            <div class="profile__tags--items">
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Equipped Kitchen</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Gym</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Laundry</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Basketball court</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Water</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin C</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin D</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin A</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Iron</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Copper</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Calsium</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Protein</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Equipped Kitchen</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Gym</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Laundry</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Basketball court</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Water</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin C</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin D</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin A</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Iron</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Copper</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Calsium</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Protein</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Equipped Kitchen</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Gym</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Laundry</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Basketball court</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Water</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin C</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin D</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Vitamin A</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Iron</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Copper</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Calsium</label>
+                                </div>
+                                <div class="profile__tags--items-solely">
+                                    <input type="checkbox" name="best" id="best">
+                                    <label for="best">Protein</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__tags profile__form-wrapper">
+                            <div class="profile__tags--title">
+                                <h3 class="title-2">Time Schedule</h3>
+                                <button class="toggle-switch"></button>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Sunday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Monday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Tuesday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Wednesday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Thursday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Friday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__tags--items-solely layout-3-cols schedule-design">
+                                <p>Saturday</p>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Opening Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__form--input separation-wrapper">
+                                    <label for="profile-email">Closing Time</label>
+                                    <div class="dropdown-sort" id="profile-email">
+                                        <select class="dropdown-sort-menu dropdown-large-padding paragraph-style-2">
+                                            <option class="dropdown-sort-item">Morning 11.00 AM</option>
+                                            <option class="dropdown-sort-item">Saab</option>
+                                            <option class="dropdown-sort-item">Opel</option>
+                                            <option class="dropdown-sort-item">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="profile__submit span-2-col">
+                            <button class="profile__submit--btn profile__submit--btn-save" id="submitBtn" type="submit">Submit List</button>
+                            <button class="profile__submit--btn" type="button" id="cancelBtn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/addlisting.js"></script>
+</body>
